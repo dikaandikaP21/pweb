@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pertemuan3</title>
+</head>
+<body>
+    <style>
+        body{
+            background: rgb(246, 196, 196);
+            /* margin: 0%; */
+        }
+        .isi-conten-luar{
+            text-align: center;
+            color: rgb(255, 0, 0);
+            margin-left :25%;
+            margin-right:  25%;
+            margin-top: 5%;
+            margin-bottom: 0%;
+            background: rgb(134, 239, 111);
+        }
+        h1{
+            margin: 0%;
+        }
+        .isi-content-dalam{
+         
+            background: rgb(120, 113, 194);
+            border-radius: 20%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 0%;
+            display: grid;
+            color: rgb(255, 255, 255);
+            height: 480px;
+            text-align: center;
+        }
+     
+        li{
+            margin: 3%;
+        }
+        button{
+            background: #000;
+        }
+     
+    </style>
+    <div class="isi-conten-luar">
+        <h1>Data Diri</h1>
+   
+    <div class="isi-content-dalam">
+        
+        <form action="" autocomplete="on" method="" enctype="multipart">
+            <ol style="list-style-type:none">
+                <li>
+                    Nama :
+                    <input type="text" name="nama" placeholder="nama" >
+                </li>
+                <li>
+                    alamat :
+                    <input type="text" name="alamat" placeholder="nama" >
+                <li>
+                  tlp :
+                  <input type="number" placeholder="harus angka">
+                </li>
+                <li>
+                jenis kelamin : 
+                  <input type="radio"> Laki laki
+                  <input type="radio"> Perempuan
+                </li>
+                <li>
+                    hobi :
+                    <input type="checkbox"> olahraga
+                    <input type="checkbox"> nonton film
+                    <input type="checkbox"> ngoding
+                </li>
+                <li>
+                    pesan : 
+                    <textarea cols="35" rows="10">pesan</textarea>
+                </li>
+                <li>
+                    status : 
+                   <select name="" id="1">
+                       <option value="">Mahasiswa</option>
+                       <option value="">kerja</option>
+                       <option value="">Nganggur</option>
+                       <option value="">tidak di ketahui</option>
+                   </select>
+                </li>
+            </ol>
+         
+          <button><input type="submit" value="submit"></button>
+          <button><input type="reset" value="reset"></button>
+            
+        </form>
+    </div>
+</div>
+</body>
+</html>
