@@ -1,0 +1,83 @@
+body{
+    margin: 0%;
+    background: rgb(138, 128, 214);
+}
+.header,.footer , .content, .card , .title-content , .info1 ,.message{
+    border: 2px solid red;
+}
+.header{
+    display: flex;
+    background-color: rgb(49, 23, 87);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+h2{
+    width: 100%;
+}
+
+.menu{
+    border: 2px solid red;
+    margin-left: 45%;
+    width: 100%;
+    align-self: center;
+    
+}
+a{
+    color: white;
+}
+
+li{
+    font-size:larger;
+    list-style-type:none;
+    float: left;
+    margin-right: 5%;  
+}
+
+.title-content{
+    text-align: center;
+    color: rgb(105, 103, 103);
+}
+.content{
+    margin-left: 1%;
+    margin-right: 1%;
+    background: rgb(255, 255, 255);
+}
+.articel{
+    display: flex;
+    flex-flow: row wrap;
+ 
+}
+.card{
+    margin: 1%;
+    height: 410px;
+    background-color: rgb(119, 246, 28);
+    border-radius: 10%;
+    flex: 200px;
+}
+h3{
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    background-color:rgb(49, 23, 87);
+color: wheat;
+}
+
+.info1{
+    width: 50%;
+}
+.info2{
+   margin-left: 6%;
+   margin-right: 6%;
+}
+.message{
+    width: 100%;
+    margin-left: 20%;
+    color: aliceblue;
+}
+textarea{
+   
+    margin-left: 15%;
+}
