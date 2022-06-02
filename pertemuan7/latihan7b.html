@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .col1, .col2, .output{
+            border: 2px solid red;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+        .col1{
+           width: 50%;
+           height: 100%;
+        }
+        .col2{
+           width: 50%;
+           height: 100%;
+        }
+        #button{
+            color: aqua;
+            background-color: blue;
+            border-radius: 20%;
+            margin-top: 5%;
+            margin-left: 35%;
+        }
+        .output{
+            height: 100%;
+        }
+    </style>
+ 
+            <h2>Latihan perulangan For</h2>
+            <div class="container" >
+                <div class="col1" >
+                   <form action="" name="formm">
+                        Jenis perulangan : 
+                        <input type="radio" name="forr" id="jenisPerulangan"  value="for"> For
+                        <input type="radio" name="forr" id="jenisPerulangan" value="while"> While
+                        <input type="radio" name="forr" id="jenisPerulangan" value="doWhile"> Do While
+                        <br>
+                        Mulai Perulangan : <input type="number" name="mulai"> <br>
+                        Batas Perulangan : <input type="number" name="batas"> <br>
+                        
+                        <button id="button" type="button" onclick="perulangan()">Submit</button>
+                    </form>
+                </div>
+                <div class="col2" name="col2">
+                    <h2>Output</h2>
+                    Perulangan : <input type="text"  id="jenis_Perulangan" disabled> <br>
+                    <div class="output"  id="output">
+
+                    </div>
+                </div>
+            </div>
+            <SCRIPT LANGUAGE="JavaScript">
+                function perulangan(){
+                   let jenisPerulangan = (document.formm.forr.value);
+                   let mulaiPerulangan = document.formm.mulai.value;
+                   let batasPerulangan = (document.formm.batas.value);
+        
+                    document.getElementById('jenis_Perulangan').value = jenisPerulangan;
+                 
+                   if(jenisPerulangan == 'for'){
+                      let hasil = document.getElementById('output');                        
+                      hasil.innerHTML = " -------------- <br>";
+                       for(let i = mulaiPerulangan;i<=batasPerulangan;i++){
+                        let h =  document.write( "<br> <pre>Angka "+ i +"<pre>");
+                           }
+                        
+                          hasil.innerHTML = "-------------- <br> ";
+                   }else if (jenisPerulangan == 'while'){
+                      
+                   }
+                }
+               </SCRIPT>
+</body>
+</html>
